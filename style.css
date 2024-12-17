@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf4f4; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Softer rounded corners */
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Heading Styles */
+h2 {
+    color: #4e73df; /* Vibrant blue */
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Form Label Styles */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input, Select, Textarea & Button Styles */
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly rounder inputs */
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Input and Textarea focus styles */
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #4e73df; /* Highlight border on focus */
+    outline: none;
+}
+
+/* Button Styles */
+form button {
+    background-color: #4e73df; /* Cool blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 14px 20px;
+    border-radius: 8px; /* Rounded corners for button */
+}
+
+form button:hover {
+    background-color: #2e5bd4; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+form button:active {
+    transform: scale(1); /* Button presses back to original size */
+}
+
+/* Response Message Styling */
+#response {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #d1f7d7; /* Soft green */
+    color: #3c763d;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+    animation: slideUp 0.5s ease-out;
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
